@@ -12,20 +12,21 @@ class App extends Component {
         <h1 className="App-title">Welcome to CYF HOTEL </h1>
       </header>
     );
-
+// class BookingsMessage extends Component { 
     const BookingsMessage = () => (
       <p className="App-intro">
         There are bookings available for {new Date().toLocaleDateString()}
       </p>
     );
-
+ 
     const SpecialDeals = () => {
       const SpecialsDealStrings = ['bananas', 'chocalates', 'lettuce', 'oranges', 'bread']
+
       return (
         <div>
-          { SpecialsDealStrings.map((name) => (
-      <p>{name}</p>
-    ))}
+          {SpecialsDealStrings.map((name) => (
+            <p>{name}</p>
+          ))}
         </div>
       )
     };
@@ -34,10 +35,12 @@ class App extends Component {
       <div className="App">
         <Logo />
         <BookingsMessage />
-        < SpecialDeals />
+        <SpecialDeals/>
       </div>
     );
   }
 }
+// }
+
 export default App;
 
